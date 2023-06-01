@@ -14,7 +14,7 @@ callPackage ./generic.nix args {
   #   zfs-2.1.9<=x<=2.1.10 is broken with aarch64-linux-6.2
   #   for future releases, please delete this condition.
   kernelCompatible = if stdenv'.isx86_64
-    then kernel.kernelOlder "6.3"
+    then kernel.kernelOlder "6.4"
     else kernel.kernelOlder "6.2";
   latestCompatibleLinuxPackages = linuxKernel.packages.linux_6_1;
 
