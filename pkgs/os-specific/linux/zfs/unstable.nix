@@ -25,7 +25,7 @@ callPackage ./generic.nix args {
   version = "2.1.12-staging-2023-06-06-my-hacks";
   rev = "5800f0d946615eb440ebf3d130beba9f356d7558";
 
-  sha256 = "tJLwyqUj1l5F0WKZDeMGrEFa8fc/axKqm31xtN51a5M=";
+  sha256 = "tJLwyqUj1l5F0WKZDeMGrEFa8fc/=";
 
   isUnstable = true;
   repoOwner = "chadcatlett";
