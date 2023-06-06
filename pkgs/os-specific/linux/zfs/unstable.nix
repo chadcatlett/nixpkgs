@@ -22,10 +22,11 @@ callPackage ./generic.nix args {
   # IMPORTANT: Always use a tagged release candidate or commits from the
   # zfs-<version>-staging branch, because this is tested by the OpenZFS
   # maintainers.
-  version = "2023.05.26.r8619.g0f03a4116";
-  rev = "0f03a411615a797425de488eecfaaf63fc41acfe";
+  version = "2.1.12-staging-2023-06-06";
+  rev = "7cd117dd8ed7b6c2ce125fcbce7d1217b0c8ddf4";
 
-  sha256 = "tJLwyqUj1l5F0WKZDeMGrEFa8fc/axKqm31xtN51a5M=";
+  # sha256 = "tJLwyqUj1l5F0WKZDeMGrEFa8fc/axKqm31xtN51a5M=";
 
   isUnstable = true;
+  repoOwner = "chadcatlett";
 }
