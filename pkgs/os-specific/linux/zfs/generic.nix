@@ -26,6 +26,8 @@
 , isUnstable ? false
 , latestCompatibleLinuxPackages
 , kernelCompatible ? null
+, repoOwner ? "openzfs"
+, repoName ? "zfs"
 }:
 
 let
@@ -49,8 +51,8 @@ stdenv'.mkDerivation {
   name = "zfs-${configFile}-${version}${optionalString buildKernel "-${kernel.version}"}";
 
   src = fetchFromGitHub {
-    owner = "openzfs";
-    repo = "zfs";
+    owner = "${repoOwner}";
+    repo = "${repoName}";
     inherit rev sha256;
   };
 
